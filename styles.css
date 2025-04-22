@@ -376,11 +376,13 @@ body{
     margin: 20px 0;
     display: grid;
     flex-direction: column;
-    color: white;
+    background-color: white;
+    color: black;
     grid-template-columns: 2fr;
     align-items: center;
     justify-items: center;
     gap: 50px;
+    border-radius: 20px;
 }
 
 .contactme h2{
@@ -456,25 +458,71 @@ body{
     border: 1px solid white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .footer{
     background: black;
     color: white;
     min-height: 30vh;
     text-align: center;
+    padding: 10px;
+    justify-items: center;
+    align-items: center;
+    gap: 15px;
+    
+}
+.footer h3{
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+    font-style: italic;
+}
+.footer .Acc {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: fit-content;
+    max-width: 90%;
+    flex-wrap: wrap; 
+}
+
+.footer .Acc li {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 20px;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid white;
+    border-radius: 10px;
+    color: white;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.Acc li a {
+    border-radius: 10px;
+    font-weight: 700;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer .Acc li:hover {
+    transition: all 0.2s ease-out;
+    transform: scale(1.05);
+    background-color: white;
+    color: black;
+}
+
+.footer .Acc li:hover a {
+    color: black;
 }
