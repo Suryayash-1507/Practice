@@ -8,16 +8,18 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<header class="header" id="home">
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
         <div class="logo">
             <img src="profile.jpg" alt="Logo" class="logo-image" width="100px" height="100px">
         </div>
 
-            <div class="info">
-                <h1>SURYA YASWANTH</h1>
-                <p>Aspiring Java Full Stack Developer | Passionate About AI, Voice Tech & Interactive Web Experiences</p>
-            </div>
-        
+        <div class="info">
+            <h1>SURYA YASWANTH</h1>
+            <p>Aspiring Java Full Stack Developer | Passionate About AI, Voice Tech & Interactive Web Experiences</p>
+        </div>
 
         <nav class="nav-bar">
             <ul>
@@ -28,9 +30,12 @@
                 <li><a href="#contactme">Contact</a></li>
             </ul>
         </nav>
-</header>
-<body>
+    </header>
+
+    <!-- Main Content -->
     <main class="container" id="home">
+
+        <!-- About Me Section -->
         <section class="aboutme" id="aboutme">
             <div class="container-1">
                 <div class="section1">
@@ -42,14 +47,15 @@
                 </div>
 
                 <div class="social-acc">
-                    <a href="#"><i class='bx bxl-linkedin'></i>LinkedIn</a>
-                    <a href="#"><i class='bx bxl-github'></i>GitHub</a>
-                    <a href="#"><i class='bx bxl-twitter'></i>Twitter</a>
-                    <a href="#"><i class='bx bxl-instagram'></i>Instagram</a>
+                    <a href="#" target="_blank"><i class='bx bxl-linkedin'></i> LinkedIn</a>
+                    <a href="#" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                    <a href="#" target="_blank"><i class='bx bxl-twitter'></i> Twitter</a>
+                    <a href="#" target="_blank"><i class='bx bxl-instagram'></i> Instagram</a>
                 </div>
             </div>
         </section>
 
+        <!-- My Skills Section -->
         <section class="myskills" id="myskills">
             <div class="container-2">
                 <div class="content">
@@ -75,9 +81,11 @@
             </div>
         </section>
 
+        <!-- My Projects Section -->
         <section class="myprojects" id="myprojects">
             <h1>My Projects</h1>
             <div class="Projects">
+
                 <div class="display-1">    
                     <div class="project-1">
                         <img src="https://drive.google.com/uc?export=view&id=1FbyCJZVSbZ556Mycv1nSyde3uDXBrY6S" alt="Project 1" width="150" height="150">
@@ -107,7 +115,7 @@
                     <div class="content-3">
                         <h2>Project Title 3</h2>
                         <p>Project description goes here. Briefly explain what the project is about and its features.</p>
-                        <button class="view3"><a href="https://www.youtube.com">View Project</a></button>
+                        <button class="view3"><a href="https://www.youtube.com" target="_blank">View Project</a></button>
                     </div>
                 </div>
 
@@ -121,39 +129,42 @@
                         <button class="view4"><a href="https://www.googlephotos.com" target="_blank">View Project</a></button>
                     </div>
                 </div>
+
             </div>
         </section>
 
-        <section class="contactme" id="#contactme">
+        <!-- Contact Section -->
+        <section class="contactme" id="contactme">
             <h2>Contact</h2>
-            <p>
-                For Contact please reach out via Sending a mail
-            </p>
+            <p>For contact, please reach out via sending a mail.</p>
 
-            <form class="Sbtfrm" name="contact" netlify>
+            <form class="Sbtfrm" name="contact" method="POST" data-netlify="true">
                 <h3>Contact Form</h3>
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email"  placeholder="Enter Email" required>
-                <label for="Contact-Num">Contact Number:</label>
-                <input type="number" id="number" name="Phone Number" placeholder="Enter Phone Number" required>
-                <label for="subject">Subject:</label>
-                <textarea type="text" id="message" name="Enter text message" placeholder="Enter text(optional)" optional></textarea>
+                <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+                <label for="number">Contact Number:</label>
+                <input type="number" id="number" name="phone" placeholder="Enter Phone Number" required>
+
+                <label for="message">Subject:</label>
+                <textarea type="text" id="message" name="message" placeholder="Enter text (optional)"></textarea>
+
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
 
+    <!-- Footer Section -->
     <footer class="footer">
-        <h3> - - - DO Follow  - - - </h3>
+        <h3> - - - DO Follow - - - </h3>
         <ul class="Acc">
-            <li><a class="bx bxl-instagram"> - Instagram</a></li>
-            <li><a class="bx bxl-linkedin"> - LinkedIn</a></li>
-            <li><a class="bx bxl-github"> - GitHub</a></li>
-            <li><a class="bx bxl-twitter"> - Twitter</a></li>
+            <li><a href="https://instagram.com" target="_blank"><i class="bx bxl-instagram"></i> - Instagram</a></li>
+            <li><a href="https://linkedin.com" target="_blank"><i class="bx bxl-linkedin"></i> - LinkedIn</a></li>
+            <li><a href="https://github.com" target="_blank"><i class="bx bxl-github"></i> - GitHub</a></li>
+            <li><a href="https://twitter.com" target="_blank"><i class="bx bxl-twitter"></i> - Twitter</a></li>
         </ul>
         <p>&copy; 2023 My Portfolio. All rights reserved.</p>
     </footer>
 
-   
 </body>
 </html>
